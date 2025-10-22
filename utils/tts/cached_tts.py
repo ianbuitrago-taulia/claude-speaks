@@ -99,8 +99,11 @@ def generate_and_cache_audio(text, audio_path):
     try:
         import requests
 
-        # ElevenLabs API endpoint (using Rachel voice)
-        voice_id = "21m00Tcm4TlvDq8ikWAM"  # Rachel - professional female voice
+        # Get voice ID from environment variable or use default
+        # Popular voices:
+        # - 21m00Tcm4TlvDq8ikWAM: Rachel - Professional female (default)
+        # - goT3UYdM9bhm0n2lmKQx: Edward - British, Dark, Seductive, Low
+        voice_id = os.getenv('ELEVENLABS_VOICE_ID', '21m00Tcm4TlvDq8ikWAM')
         url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
 
         headers = {

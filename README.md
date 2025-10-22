@@ -72,6 +72,10 @@ OPENAI_API_KEY=sk-...
 # Optional: For ElevenLabs TTS (higher quality voices)
 ELEVENLABS_API_KEY=...
 
+# Optional: Choose ElevenLabs voice (requires ELEVENLABS_API_KEY)
+# ELEVENLABS_VOICE_ID=goT3UYdM9bhm0n2lmKQx  # Edward - British, Dark, Seductive, Low
+# ELEVENLABS_VOICE_ID=21m00Tcm4TlvDq8ikWAM  # Rachel - Professional female (default)
+
 # Optional: Customize your name in notifications
 # ENGINEER_NAME=YourName  # Falls back to $USER if not set
 ```
