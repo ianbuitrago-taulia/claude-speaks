@@ -28,6 +28,7 @@ def speak(text):
         # Popular voices:
         # - 21m00Tcm4TlvDq8ikWAM: Rachel - Professional female (default)
         # - goT3UYdM9bhm0n2lmKQx: Edward - British, Dark, Seductive, Low
+        # - ZF6FPAbjXT4488VcRRnw: Amelia - British
         voice_id = os.getenv('ELEVENLABS_VOICE_ID', '21m00Tcm4TlvDq8ikWAM')
         url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
 
